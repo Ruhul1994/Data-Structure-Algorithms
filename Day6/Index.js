@@ -1,34 +1,34 @@
-// function same(arr1, arr2) {
-//     if(arr1.length != arr2.length){
-//         return false
-//     }
+function same(arr1, arr2) {
+    if(arr1.length != arr2.length){
+        return false
+    }
 
-//     let sequenceCounter1= {};
-//     let sequenceCounter2={};
+    let sequenceCounter1= {};
+    let sequenceCounter2={};
 
-//     for(let val of arr1){
+    for(let val of arr1){
      
-//         sequenceCounter1[val] = (sequenceCounter1[val]  || 0)+1;
-//     }
-//     for(let val of arr2){
-//         sequenceCounter2[val] = (sequenceCounter2[val] || 0) + 1;
-//     }
-// for(let key in sequenceCounter1){
+        sequenceCounter1[val] = (sequenceCounter1[val]  || 0)+1;
+    }
+    for(let val of arr2){
+        sequenceCounter2[val] = (sequenceCounter2[val] || 0) + 1;
+    }
+for(let key in sequenceCounter1){
    
-//     if(!(key ** 2 in sequenceCounter2)){
-//         return false;
-// }
+    if(!(key ** 2 in sequenceCounter2)){
+        return false;
+}
   
-// if(sequenceCounter1[key] !== sequenceCounter2[key **2]){
-//     return false;
-// }
-//   return true; 
-// }
-// }
+if(sequenceCounter1[key] !== sequenceCounter2[key **2]){
+    return false;
+}
+  return true; 
+}
+}
 
 
-// let results = same([2,3,4], [4,9,16]);
-// console.log(results);
+let results = same([2,3,4], [4,9,16]);
+console.log(results);
 
 // Length Check: The function first checks if the lengths of arr1 and arr2 are different. If they are, it immediately returns false.
 
