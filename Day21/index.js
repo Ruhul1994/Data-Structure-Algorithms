@@ -1,5 +1,5 @@
 /**
- * que data structure.
+ * queue data structure.
  * create a class.
  * take a constrictor.
  * create a this.array.
@@ -10,31 +10,37 @@
  */
 
 class DataQueue {
-    constructor(value) {
-        this.array = [value];
+    constructor() {
+        this.array = [];
     }
 
-    add(value) {
-        this.array.unshift(value);
+    enqueue(value) {
+        this.array.push(value);  // Add to the end
         return this.array;
     }
 
-    peek() {
-        return this.array[0];
+    dequeue() {
+        return this.array.shift();  // Remove from the front
     }
 
-    delete() {
-        return this.array.shift();
+    peek() {
+        return this.array[0];  // Return first element
+    }
+
+    isEmpty() {
+        return this.array.length === 0;  // Check if empty
     }
 }
 
-let newQueue = new DataQueue(10);
+// Example usage:
+let newQueue = new DataQueue();
 
-console.log(newQueue.add(12));
-console.log(newQueue.add(2));
-console.log(newQueue.add(120));
-console.log(newQueue.add(102));
-console.log(newQueue.add(112));
-console.log(newQueue.peek());
-console.log(newQueue.delete());
-console.log(newQueue.peek());
+console.log(newQueue.enqueue(12));  // [12]
+console.log(newQueue.enqueue(2));   // [12, 2]
+console.log(newQueue.enqueue(120)); // [12, 2, 120]
+console.log(newQueue.enqueue(102)); // [12, 2, 120, 102]
+console.log(newQueue.enqueue(112)); // [12, 2, 120, 102, 112]
+console.log(newQueue.peek());       // 12 (front element)
+console.log(newQueue.dequeue());    // 12 (removes first element)
+console.log(newQueue.peek());       // 2 (next front element)
+console.log(newQueue.isEmpty());    // false
