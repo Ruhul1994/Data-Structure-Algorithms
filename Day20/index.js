@@ -6,6 +6,9 @@
 
 
 class Stack{
+    /**
+     * @param{no pram}
+     */
     constructor(){
         this.database={};
         this.current=0;
@@ -27,6 +30,9 @@ class Stack{
         return this.database[this.current]; 
     }
 }
+/**
+ * this is stack data statures.
+ */
 
 let stack = new Stack();
 
