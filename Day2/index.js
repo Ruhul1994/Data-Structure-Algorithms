@@ -1,4 +1,4 @@
-function logarithmsN(n) {
+function logarithmsN(n){
     while(n>1) {
         console.log(n);
         n /= 2;

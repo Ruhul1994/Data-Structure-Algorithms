@@ -13,7 +13,7 @@ let temperatures = [-2,4,45,23,-4,"error",-6,-8,34,43,Error,32,-1];
 function temperatureDown(arr){
     let high = [0];
     let low = [0];
-    for(let i =0; i < temperatures.length; i++){
+    for(let i =0; i <arr.length; i++){
         if(typeof arr[i] !== 'number' || isNaN(arr[i])) continue;
 
         if(arr[i] > high) high = arr[i];
