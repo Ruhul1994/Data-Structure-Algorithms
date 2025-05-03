@@ -31,10 +31,41 @@
 
 // 
 
-Problem 2: Reverse a String
+// Problem 2: Reverse a String
 
-    Topic: Strings, Two-pointer
+//     Topic: Strings, Two-pointer
 
-    Math/Logic Used: Index Manipulation
+//     Math/Logic Used: Index Manipulation
 
-    Problem: Reverse the characters in a string array in-place.
+//     Problem: Reverse the characters in a string array in-place.
+
+// Input: ["h","e","l","l","o"]
+// Output: ["o","l","l","e","h"]
+
+// function reverseString(s) {
+//     let left = 0;
+//     let right = s.length -1;
+//     while(left < right){
+//         [s[left], s[right]] = [s[right], s[left]];
+//         left++;
+//         right--;
+//     }
+//     return s.join(''); // Convert array back to string
+// };
+// // let str = ["h","e","l","l","o"];
+
+// str = 'reversed string';
+// str1 = str.split(''); // Convert string to array
+
+// console.log(reverseString(str1));
+
+
+// // Output: ["o","l","l","e","h"]
+
+
+/**
+ * !this is the first line of the code.
+ * ?this is the second line of code.
+ * Todo: i will do this letter.
+ */
+
