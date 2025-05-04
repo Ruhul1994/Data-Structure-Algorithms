@@ -35,10 +35,7 @@
 
 // console.log(newArray);
 
-myArr =[12,3,4,5,6,8,64,];
+// 
 
-let newArray = myArr.filter(myFunction)
-
-function myFunction(value,index,array)
-{return value > 20};
-console.log(newArray);
+let myDate = Date.now();
+console.log(myDate); // 1698236480000
